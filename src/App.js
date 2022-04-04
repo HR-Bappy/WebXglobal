@@ -73,8 +73,9 @@ function App() {
     let tempFilter = []
     temp.map((item) => {
       let name = item.name
+      let id = item.productId
       for (let i = 0; i < name.length - l + 1; i++) {
-        if (name.substr(i, l).toLowerCase() === value.toLowerCase()) {
+        if (name.substr(i, l).toLowerCase() === value.toLowerCase() || id.substr(i, l).toLowerCase() === value.toLowerCase()) {
           tempFilter.push(item)
           break;
         }
