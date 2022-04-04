@@ -1,0 +1,458 @@
+/*-----------------
+	Author: HR-Bappy
+-----------------------*/
+
+
+/*============================
+ [Table of CSS]
+1. General
+2. Helper Class
+3. Home page css
+
+
+
+/*-----------------
+	1. Common
+-----------------------*/
+
+:root {
+    --primary: #0b4376;
+    --white: #fff;
+	--black:#333333;
+	--gray : #666666;
+  }
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 0.875rem;
+	color: #666;
+	background-color: #fafafa;
+	overflow-x: hidden;
+	height: 100%;
+	margin: 0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {margin-top: 0;}
+h1,
+.h1 {font-size: 2.25rem;}
+h2,
+.h2 {font-size: 1.875rem;}
+h3,
+.h3 {font-size: 1.5rem;}
+h4,
+.h4 {font-size: 1.125rem;}
+h5,
+.h5 {font-size: 0.875rem;}
+h6,
+.h6 {font-size: 0.75rem;}
+.w-100{width: 100% !important;}
+.h-100{height: 100% !important;}
+input{	
+	border: none;
+	background: #fafafa;
+	padding: 0 10px;
+	outline: none;
+}
+/*-----------------
+	2. Helper Class
+-----------------------*/
+
+.m-r-5 {margin-right: 5px !important;}
+.m-r-10 {margin-right: 10px !important;}
+.m-l-5 {margin-left: 5px !important;}
+.m-t-0 {margin-top: 0 !important;}
+.m-t-10 {margin-top: 10px !important;}
+.m-t-20 {margin-top: 20px !important;}
+.m-t-30 {margin-top: 30px !important;}
+.m-t-50 {margin-top: 50px !important;}
+.m-b-10 {margin-bottom: 10px !important;}
+.m-b-20 {margin-bottom: 20px !important;}
+.m-b-30 {margin-bottom: 30px !important;}
+.pt-50{ padding-top: 50px; }
+.pb-50{padding-bottom: 50px;}
+.ptb-50{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.pt-100{padding-top: 100px;}
+.pb-100{padding-bottom: 100px;}
+.ptb-100{padding: 100px 0;}
+
+/*-----------------
+	3. Home page css
+-----------------------*/
+#home-page{
+	width: 100vw;
+	height: 100vh;
+	background: #FEFEFE;
+	/* padding: 10px; */
+}
+.content{
+	display: flex;
+	background: transparent;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	padding: 10px;
+}
+.content .left{
+	background: #e4e4e4;
+	width: 31.5%;
+	padding: 10px;
+}
+.content .right{
+	background: #e4e4e4;
+	width: 67%;
+	margin-left: 1.5%;
+	padding: 10px;
+}
+.left .row{
+	display: flex;
+	border: 1px solid #888;
+	height: 35px;
+}
+
+/* dropdown select  */
+.select-dropdown,
+.select-dropdown * {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	box-sizing: border-box;
+	width: max-content;
+}
+.select-dropdown {
+	position: relative;
+	background-color: #eaeaea;
+	border-radius: 4px;
+	width: 80%;
+}
+.select-dropdown select {
+	font-size: 1rem;
+	font-weight: normal;
+	max-width: 100%;
+	width: 100%;
+	padding: 8px 24px 8px 10px;
+	border: none;
+	background-color: transparent;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	appearance: none;
+}
+.select-dropdown select:active, .select-dropdown select:focus {
+	outline: none;
+	box-shadow: none;
+}
+.select-dropdown:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	width: 0;
+	height: 0;
+	margin-top: -2px;
+	border-top: 5px solid #aaa;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+/* end  */
+.btn{
+	cursor: pointer;
+	border: none;
+	transition: .3s ease-in-out;
+}
+.filter-btn{
+	border-radius: 0;
+	border-left: 1px solid #888;
+}
+.filter-btn:hover{
+	background: #4673A1;
+}
+
+.filter-btn:hover svg{
+	fill: #fff;
+}
+.filter-btn svg{
+	width: 20px;
+	fill: #4673A1;
+}
+#search{
+	width: 95%;
+}
+/* table css */
+.table{
+	height: calc(100vh - 370px);
+	/* max-height: 300px; */
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.table::-webkit-scrollbar {
+    display: none;
+}
+.table table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  .table tr:first-child{
+	  background: #4673A1;
+	  color: #fff;
+  }
+  .table td, .table th {
+	border: 1px solid #888;
+	padding: 3px;
+	text-align: center;
+  }
+  .table-head th{
+	  padding: 8px !important;
+  }
+  .table tr:nth-child(even) {
+	background-color: #eee;
+  }
+  .table table svg{
+	width: 14px;
+	fill: #888;
+  }
+  .table tr:first-child svg{
+	fill: #fff;
+  }
+  .table tr input{
+	  width: 40px;
+	  height: 25px;
+	  border: 1px solid #777;
+	  background: #fafafa;
+  }
+  .left-bottom{
+	  bottom: 0;
+	  display: flex;
+	  flex-direction: column;
+  }
+  .summery{
+	  border-top: 1px solid #888;
+	  display: flex;
+	  width: 100%;
+	  background:#eee;
+  }
+  .left-bottom .summery:last-child{
+	border-bottom: 1px solid #888;
+  }
+  .summery p{
+	  width: 48%;
+	  color: #222;
+	  margin: 8px 0;
+	  padding: 0 10px;
+  }
+  .summery p:first-child{
+	  margin-right: 4%;
+  }
+  .summery p svg{
+	  height: 15px;
+	  margin-left: 5px;
+	  fill: #4673A1;
+  }
+  .summery p span{
+	  float: right;
+	  font-size: 16px;
+	  font-weight: 500;
+  }
+ .left-bottom .payable{
+	 background: #666;
+ }
+ .left-bottom .payable p{
+	 color: #fff;
+	 font-size: 16px;
+	 font-weight: 500;
+	 margin: 0 !important;
+	 padding: 8px 10px;
+ }
+ .left-bottom .payable p svg{
+	 fill: #2c93fa;
+	 height: 16px;
+	 margin-bottom:-4px ;
+	 margin-left: 5px;
+ }
+ .left-bottom .payable p span{
+	 float: right;
+ }
+ .left .btn-group{
+	display: flex;
+ }
+ .left .btn-group .col{
+	 width: 33.33%;
+	 height: 70px;
+ }
+ .left .btn-group .col button{
+	 width: 100%;
+	 height: 35px;
+	 color: #fff;
+ }
+ .left .btn-group .col button.suspend{
+	 background: #BE8C4B;
+ }
+ .left .btn-group .col button.cancel{
+	 background: #AD4E4B;
+ }
+ .left .btn-group .col button.order{
+	 background: #579BB1;
+ }
+ .left .btn-group .col button.bill{
+	 background: #4673A1;
+ }
+ .left .btn-group .col:last-child button{
+	 height: 70PX;
+	 background: #569354;
+ }
+ .left .btn-group .col button:hover{
+	 letter-spacing: 1px;
+}
+ .btn-group button svg{
+	  fill: #fff;
+	height: 15px;
+	margin-bottom: -2px;
+	margin-right: 3px;
+ }
+ 
+
+ /* right sec css */
+ .right{
+	 display: flex;
+	 justify-content: space-between;
+	 flex-direction: column;
+ }
+ .right .top{
+	 display: flex;
+ }
+ .right .top button{
+	background: #fff;
+	 height: 120px;
+	 width: 100px;
+	 margin-right: 5px;
+	 border: 1px solid #d1d1d1;
+	 padding: 5px;
+ }
+ .right .top button:hover{
+	 background: #bbb;
+ }
+.right .top img{
+	height: 60px;
+	width: 80%;
+	object-fit: cover;
+}
+.right .bottom button{
+	width: 33.33%;
+	color: #fff;
+	height: 40px;
+	background: #5c85c7;
+}
+.right .bottom button:nth-child(2){
+	background: #386fc9;
+}
+.right .bottom button svg{
+	height: 14px;
+	fill: #fff;
+	margin-bottom: -2px;
+	margin-right: 5px;
+}
+/* preloader css  */
+.preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.295);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99999;
+}
+.preloader img{
+	width: 100px;
+}
+
+/* invoice sec  */
+.invoice-sec{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.39);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.invoice-sec .invoice{
+	width: 550px;
+	/* height: 550px; */
+	padding: 5px;
+	background: #fff;
+}
+.close-btn{
+	position: absolute;
+	padding: 5px 10px;
+	background: #aaa;
+}
+.invoice .top{
+	/* height: ; */
+	background: #386fc9;
+	color: #fff;
+	padding-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.invoice .top p{
+	font-size: 12px;
+}
+.txt-light{
+	font-size: 14px;
+	color: #aaa;
+}
+.bill-info{
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.bill-info h1{
+	color: #386fc9;
+}
+.bill-info p{
+	line-height: 5px;
+}
+.invoice-table{
+	border-top: 2px solid #386fc9;
+	padding: 0 20px;
+}
+.invoice-table table{
+	width: 100%;	
+	border-collapse: collapse;
+	margin-top: 5px;
+}
+.invoice-sec .bottom{
+	padding: 10px 30px;
+}
+.f-right{
+	display: flex;
+	justify-content: end;
+	line-height: 0px;
+}
+.txt-color{
+	color: #386fc9;
+	margin-right: 40px;
+}
+.invoice-footer{
+	display: flex;
+	justify-content: space-between;
+}
+td, th{	
+	padding: 3px;
+	text-align: center;
+	border: 1px solid #888;
+}
