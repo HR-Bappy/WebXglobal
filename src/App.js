@@ -61,7 +61,7 @@ function App() {
     notification('fail', 'Cancel button clicked')
   }
   function onSubmitPaymentFun() {
-    notification('success', 'Order button clicked')
+    notification('success', 'Payment button clicked')
   }
   function billFun() {
     notification('success', 'Bill button clicked')
